@@ -1,7 +1,5 @@
-import { MyComponent, defineCustomElements } from 'react-library';
+import { MyComponent } from 'react-library';
 import './App.css'
-
-defineCustomElements();
 
 function App() {
 

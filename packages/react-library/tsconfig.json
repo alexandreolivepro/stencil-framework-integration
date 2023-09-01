@@ -1,6 +1,7 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
+      "removeComments": false,
       "outDir": "./dist",
       "lib": ["dom", "es2015"],
       "module": "es2015",
@@ -9,7 +10,7 @@
       "skipLibCheck": true,
       "jsx": "react",
       "allowSyntheticDefaultImports": true,
-      "declarationDir": "./dist/types"
+      "declarationDir": "./dist/types",
     },
     "include": ["lib"],
     "exclude": ["node_modules"]
