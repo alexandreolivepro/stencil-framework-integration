@@ -1,0 +1,30 @@
+{
+  "name": "@my-app/vue",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "homepage": "https://github.com/alexandreolivepro/stencil-framework-integration#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "gihttps://github.com/alexandreolivepro/stencil-framework-integration.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/vue-library.test.js",
+    "build": "npm run tsc",
+    "tsc": "tsc -p . --outDir ./dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@my-app/core": "*"
+  }
+}
