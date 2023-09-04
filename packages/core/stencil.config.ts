@@ -26,6 +26,9 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null, // disable service workers
     },
+    {
+      type: 'docs-readme',
+    },
     reactOutputTarget({
       componentCorePackage: '@my-app/core',
       proxiesFile: '../react/lib/components/stencil-generated/index.ts',

@@ -36,34 +36,34 @@
         }
       }
     },
-    "my-app": {
+    "test-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/my-app",
-      "sourceRoot": "projects/my-app/src",
+      "root": "projects/test-app",
+      "sourceRoot": "projects/test-app/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-app",
-            "index": "projects/my-app/src/index.html",
-            "main": "projects/my-app/src/main.ts",
+            "outputPath": "dist/test-app",
+            "index": "projects/test-app/src/index.html",
+            "main": "projects/test-app/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "projects/my-app/tsconfig.app.json",
+            "tsConfig": "projects/test-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/my-app/src/favicon.ico",
-              "projects/my-app/src/assets"
+              "projects/test-app/src/favicon.ico",
+              "projects/test-app/src/assets"
             ],
             "styles": [
-              "projects/my-app/src/styles.scss"
+              "projects/test-app/src/styles.scss"
             ],
             "scripts": []
           },
@@ -98,10 +98,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-app:build:production"
+              "browserTarget": "test-app:build:production"
             },
             "development": {
-              "browserTarget": "my-app:build:development"
+              "browserTarget": "test-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -109,7 +109,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-app:build"
+            "browserTarget": "test-app:build"
           }
         },
         "test": {
@@ -119,14 +119,14 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "projects/my-app/tsconfig.spec.json",
+            "tsConfig": "projects/test-app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/my-app/src/favicon.ico",
-              "projects/my-app/src/assets"
+              "projects/test-app/src/favicon.ico",
+              "projects/test-app/src/assets"
             ],
             "styles": [
-              "projects/my-app/src/styles.scss"
+              "projects/test-app/src/styles.scss"
             ],
             "scripts": []
           }
