@@ -1,9 +1,10 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, getAssetPath, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
+  assetsDirs: ['assets'],
   shadow: true,
 })
 export class MyComponent {
@@ -27,6 +28,6 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return <div>Hello, World! I'm {this.getText()} <img src={getAssetPath('/assets/stencil-logo.png')}/></div>;
   }
 }
