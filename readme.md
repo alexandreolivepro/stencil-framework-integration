@@ -26,5 +26,5 @@ You can easily change the name of the libraries by replacing all instance of "@m
 
 If you want to learn more about how this repository was built please read this 2 pieces article that I wrote: 
 - Everything about output target types: https://alexandreolive.medium.com/stenciljs-a-deep-dive-on-the-inner-workings-of-output-targets-91199ace026e
-- Everything about framework integrations: (about to be published)
+- Everything about framework integrations: https://alexandreolive.medium.com/unlocking-cross-framework-power-stenciljs-configuration-demystified-cd12933b1aaf
 
